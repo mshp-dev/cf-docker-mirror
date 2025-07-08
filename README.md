@@ -12,7 +12,7 @@ This project is a tool for setting up a Docker image proxy on Cloudflare Workers
 
 ### 🚀 Deployment and Implementation
 
-- **Workers**: Deploy the contents of the `_workers.js` file in your Worker
+- **Workers**: Deploy the contents of the `worker.js` file in your Worker
 - **Pages**: Fork this project for yourself and easily deploy by connecting your account to Cloudflare
 
 ### ⚙️ Usage Instructions [YouTube](https://www.youtube.com/)
@@ -54,7 +54,7 @@ sudo systemctl restart docker
 
 ### 🚀 نحوه ی استقرار و پیاده سازی
 
-- **Workers**: محتویات فایل `_workers.js` رو توی ورکر پیاده سازی کنید
+- **Workers**: محتویات فایل `worker.js` رو توی ورکر پیاده سازی کنید
 - **Pages**: پروژه رو برای خودتون فورک کنید و با اتصال اکانت به کلاودفلر به سادگی پیاده سازی کنید
 
 ### ⚙️ نحوه استفاده [YouTube](https://www.youtube.com/)
