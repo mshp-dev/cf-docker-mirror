@@ -1,4 +1,4 @@
-# 🐳 Docker Personal Proxy Tool / ابزاری برای راه اندازی پروکسی شخصی داکر!
+# 🐳 Docker Personal Proxy Tool !
 
 ![CF-Workers-docker.io](./iran-mirror-docker.png)
 
