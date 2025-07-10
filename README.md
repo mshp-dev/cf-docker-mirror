@@ -15,8 +15,6 @@ This project is a tool for setting up a Docker image proxy on Cloudflare Workers
 - **Workers**: Deploy the contents of the `worker.js` file in your Worker
 - **Pages**: Fork this project for yourself and easily deploy by connecting your account to Cloudflare
 
-### ⚙️ Usage Instructions [YouTube](https://www.youtube.com/watch?v=nqrmKV5KtPU)
-
 Assume your Worker app domain is: `myapp.account.workers.dev`
 
 #### 1. Add your Worker domain to the beginning of the image name
@@ -43,48 +41,5 @@ sudo systemctl restart docker
 ```
 
 ---
-
-## فارسی
-
-این پروژه ابزاری هست برای راه اندازی پروکسی ایمیج های داکر بر بستر ورکر های کلاودفلر
-
-> [!WARNING]
-> توجه داشته باشید که راه اندازی وی پی ان و هرگونه پروکسی بر بستر کلاودفلر خلاف سیاست های استفاده از کلاودفلر هست
-> لطفا در هنگام استفاده به این مسئله توجه داشته باشید و این سرویس رو روی اکانت های اصلی خود راه اندازی نکنید
-
-### 🚀 نحوه ی استقرار و پیاده سازی
-
-- **Workers**: محتویات فایل `worker.js` رو توی ورکر پیاده سازی کنید
-- **Pages**: پروژه رو برای خودتون فورک کنید و با اتصال اکانت به کلاودفلر به سادگی پیاده سازی کنید
-
-### ⚙️ نحوه استفاده [YouTube](https://www.youtube.com/watch?v=nqrmKV5KtPU)
-
-فرض کنید دامنه ی اپ شما در ورکر این باشه: `myapp.account.workers.dev`
-
-#### 1. دامنه ی ورکر خودتون رو به ابتدای اسم ایمیج اضافه کنید
-
-```shell
-docker pull myapp.account.workers.dev/grafana/grafana:12.0.1
-```
-
-```shell
-docker pull docker.fxxk.dedyn.io/library/nginx:stable-alpine3.19-perl
-```
-
-#### 2. تنظیم میرور در داکر
-
-فایل `/etc/docker/daemon.json` رو در صورت موجود نبودن ایجاد کنید و میرور خودتون رو اونجا ست کنید:
-
-```shell
-sudo tee /etc/docker/daemon.json <<-'EOF'
-{
-  "registry-mirrors": ["https://myapp.account.workers.dev"]
-}
-EOF
-sudo systemctl restart docker
-```
-
-
-
 
 ### Original Repo -> https://github.com/cmliu/CF-Workers-docker.io
